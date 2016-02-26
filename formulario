@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Control de glucosa</title>
+  <link rel="stylesheet" type"text/css">
+  <body>
+ 	<h1 class="h">Control de Glucosa</h1>
+ 	<div class= "estilo_formulario">
+ 		<p class="estilo_datos"> Formulario de datos</p>
+ 	<form method="post" id="form" name="form">
+ 		<!--cajas para el formulario-->
+ 		<table>		
+ 				<td><p class="dato">Valor medición de glucosa: </p></td>
+ 				<td><input type="text" placeholder="desayuno" name="glucosa" id="glucosa" maxlength="5" autofocus class="campo"required></td>
+ 				<td><input type="text" placeholder="comida" name="glucosa" id="glucosa" maxlength="5" autofocus class="campo" required></td>
+ 				<td><input type="text" placeholder="cena" name="glucosa" id="glucosa" maxlength="5" autofocus class="campo" required></td>
+ 			</tr>
+ 			<tr>
+ 				<td><p class="dato">Hora de medidas: </p></td>
+ 				<td><input type="time" placeholder="hh:mm"name="hora" id="hora" class="campo" required></td>
+ 				<td><input type="text" placeholder="hh:mm"name="hora" id="hora" class="campo" required></td>
+ 				<td><input type="text" placeholder="hh:mm"name="hora" id="hora" class="campo" required></td>
+ 			</tr>
+ 			<tr>
+ 				<td><p class="dato">Fecha de control: </p> </td>
+  				<td><input type="text" size="20" placeholder="dd" maxlength="2" id="fecha_dia" name="fecha_dia" required></td>
+ 				<td>de
+  				<select id="fecha_mes" name="fecha_mes">
+   					<option value="1">Enero</option>
+    				<option value="2">Febrero</option>
+    				<option value="3">Marzo</option>
+    				<option value="4">Abril</option>
+    				<option value="5">Mayo</option>
+    				<option value="6">Junio</option>
+    				<option value="7">Julio</option>
+    				<option value="8">Agosto</option>
+    				<option value="9">Septiembre</option>
+    				<option value="10">Octubre</option>
+    				<option value="11">Noviembre</option>
+    				<option value="12">Diciembre</option></select>
+  					de</td>
+  				<td><input type="text" size="20" placeholder="aaaa" maxlength="4" id="fecha_ano" name="fecha_ano" required></td>
+ 			</tr>
+ 		</table>
+    <for="descripción">Descripción del día:<br/>
+    <input type="radio" name="descripcion" value="normal" checked="checked" /> No he sufrido alteraciones en el día.<br/>
+    <input type="radio" name="descripcion" value="bajada" /> He sufrido una bajada de azúcar con valor <input type="text" placeholder="medición" name="glucosa" id="glucosa" maxlength="5" autofocus class="campo"required> a las <input type="time" placeholder="hh:mm"name="hora" id="hora" class="campo" required> horas <br/> 
+    <input type="radio" name="descripcion" value="subida" /> He sufrido una subida de azúcar con valor <input type="text" placeholder="medición" name="glucosa" id="glucosa" maxlength="5" autofocus class="campo"required> a las <input type="time" placeholder="hh:mm"name="hora" id="hora" class="campo" required> horas <br/>
+    <input type="submit" id="boton" value="Registrar control"> <input type="reset" name="limpiar" value="Deshacer">
+ 		<p class="dato">Adjuntar fichero</p>
+ 		<input type="file" name="fichero">
+ 	</form>
+ </div>
+ </body>
+ </html>
