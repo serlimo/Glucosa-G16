@@ -1,0 +1,24 @@
+body{
+	background-color: #9FDBF2;
+	font-family: "Verdana";
+}
+h1{
+	font-style: "bold";
+	font-weight: bold;
+	font-family: "Arial";
+}
+p #estilo_datos{
+	font-style: italic;	
+}
+div #boton{
+	border-radius: 12px;
+	box-shadow: 0 0 3px 3px #178CBA; /* para hacer sombras en los 4 lados */ 
+}
+div #reset{ /*escribir id=reset*/
+	border-radius: 12px;
+	box-shadow: 0 0 3px 3px #178CBA; /* para hacer sombras en los 4 lados */ 
+}
+div #file{ /*escribir id=file*/
+	border-radius: 12px;
+	box-shadow: 0 0 3px 3px #178CBA; /* para hacer sombras en los 4 lados */ 
+}
