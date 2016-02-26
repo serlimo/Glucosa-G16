@@ -12,15 +12,15 @@
  		<!--cajas para el formulario-->
  		<table>		
  				<td><p class="dato">Valor medición de glucosa: </p></td>
- 				<td><input type="text" placeholder="desayuno" name="glucosa" id="glucosa" maxlength="5" autofocus class="campo"required></td>
- 				<td><input type="text" placeholder="comida" name="glucosa" id="glucosa" maxlength="5" autofocus class="campo" required></td>
- 				<td><input type="text" placeholder="cena" name="glucosa" id="glucosa" maxlength="5" autofocus class="campo" required></td>
+ 				<td><input type="text" placeholder="desayuno" name="glucosa" id="glucosa_adesayuno" maxlength="5" autofocus class="campo"required></td>
+ 				<td><input type="text" placeholder="comida" name="glucosa" id="glucosa_acomida" maxlength="5" autofocus class="campo" required></td>
+ 				<td><input type="text" placeholder="cena" name="glucosa" id="glucosa_acena" maxlength="5" autofocus class="campo" required></td>
  			</tr>
  			<tr>
  				<td><p class="dato">Hora de medidas: </p></td>
- 				<td><input type="time" placeholder="hh:mm"name="hora" id="hora" class="campo" required></td>
- 				<td><input type="time" placeholder="hh:mm"name="hora" id="hora" class="campo" required></td>
- 				<td><input type="time" placeholder="hh:mm"name="hora" id="hora" class="campo" required></td>
+ 				<td><input type="time" placeholder="hh:mm"name="hora_adesayuno" id="hora" class="campo" required></td>
+ 				<td><input type="time" placeholder="hh:mm"name="hora_acomida" id="hora" class="campo" required></td>
+ 				<td><input type="time" placeholder="hh:mm"name="hora_acena" id="hora" class="campo" required></td>
  			</tr>
  			<tr>
  				<td><p class="dato">Fecha de control: </p> </td>
@@ -45,9 +45,9 @@
  		</table>
     <for="descripción">Descripción del día:<br/>
     <input type="radio" name="descripcion" value="normal" checked="checked" /> No he sufrido alteraciones en el día.<br/>
-    <input type="radio" name="descripcion" value="bajada" /> He sufrido una bajada de azúcar con valor <input type="text" placeholder="medición" name="glucosa" id="glucosa" maxlength="5" autofocus class="campo"required> a las <input type="time" placeholder="hh:mm"name="hora" id="hora" class="campo" required> horas <br/> 
-    <input type="radio" name="descripcion" value="subida" /> He sufrido una subida de azúcar con valor <input type="text" placeholder="medición" name="glucosa" id="glucosa" maxlength="5" autofocus class="campo"required> a las <input type="time" placeholder="hh:mm"name="hora" id="hora" class="campo" required> horas <br/>
-    <input type="submit" id="boton" value="Registrar control"> <input type="reset" name="limpiar" value="Deshacer">
+    <input type="radio" name="descripcion" value="bajada" /> He sufrido una bajada de azúcar con valor <input type="text" placeholder="medición" name="glucosa" id="glucosa_bajada" maxlength="5" autofocus class="campo"required> a las <input type="time" placeholder="hh:mm"name="hora" id="hora_bajada" class="campo" required> horas <br/> 
+    <input type="radio" name="descripcion" value="subida" /> He sufrido una subida de azúcar con valor <input type="text" placeholder="medición" name="glucosa" id="glucosa_subida" maxlength="5" autofocus class="campo"required> a las <input type="time" placeholder="hh:mm"name="hora" id="hora_subida" class="campo" required> horas <br/>
+    <input type="submit" id="boton_control" value="Registrar control"> <input type="reset" id="boton_limpiar"name="limpiar" value="Deshacer">
  		<p class="dato">Adjuntar fichero</p>
  		<input type="file" name="fichero">
  	</form>
