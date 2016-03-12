@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GluControl</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+  <script type="text/javascript" src="js/cufon-yui.js"></script>
+  <script type="text/javascript" src="js/Humanst521_BT_400.font.js"></script>
+  <script type="text/javascript" src="js/Humanst521_Lt_BT_400.font.js"></script>
+  <script type="text/javascript" src="js/cufon-replace.js"></script>
+	<script type="text/javascript" src="js/roundabout.js"></script>
+  <script type="text/javascript" src="js/roundabout_shapes.js"></script>
+  <script type="text/javascript" src="js/gallery_init.js"></script>
+  <!--[if lt IE 7]>
+  	<link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="all">
+  <![endif]-->
+  <!--[if lt IE 9]>
+  	<script type="text/javascript" src="js/html5.js"></script>
+    <script type="text/javascript" src="js/IE9.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="container">
+      <h1><a href="index.html">GluControl</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="upload.html">Subida</a></li>
+          <li><a href="stats.html">Estadísticas</a></li>
+          <li><a href="profile.html">Pefil</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="main-box">
+    <div class="container">
+      <div class="inside">
+        <div class="wrapper">
+        	<!-- aside -->
+          <aside>
+            <h2>Subir <span>Controles</span></h2>
+            <div class="img-box">
+            	<figure><img src="images/blood.jpg" alt=""></figure>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam.
+            </div>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</p> 
+            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+          </aside>
+          <!-- content -->
+          <section id="content">
+            <form class="form-container">
+      <div class="form-title"><h2>Subida de controles</h2></div>
+      <div class="form-title">Valor de glucosa</div>
+        <input class="form-field" ="text" placeholder="Desayuno" name="glucosa" id="glucosa" maxlength="5" autofocus class="campo"required>
+        <input class="form-field" ="text" placeholder="Comida" name="glucosa" id="glucosa" maxlength="5" autofocus class="campo"required>
+       <input class="form-field" ="text" placeholder="Cena" name="glucosa" id="glucosa" maxlength="5" autofocus class="campo"required>
+      <div class="form-title">Hora de las medidas</div>
+        <input class="form-field" type="time" placeholder="hh:mm"name="hora" id="hora" class="campo" required>
+        <input class="form-field" type="time" placeholder="hh:mm"name="hora" id="hora" class="campo" required>
+        <input class="form-field" type="time" placeholder="hh:mm"name="hora" id="hora" class="campo" required>
+      <div class="form-title">Fecha de la medida</div>
+        <input class="form-field" type="text" size="20" placeholder="dd" maxlength="2" id="fecha_dia" name="fecha_dia" required>
+        <select class="form-field" id="fecha_mes" name="fecha_mes">
+                <option value="1">Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                <option value="7">Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option></select>
+        <input class="form-field" type="text" size="20" placeholder="aaaa" maxlength="4" id="fecha_ano" name="fecha_ano" required>
+
+        <div class="form-title"><for="descripción">Descripción del día:</div>
+          <div class="form-title">
+            <input class="form-title" type="radio" name="descripcion" value="normal" checked="checked" /> No he sufrido alteraciones en el día.<br/>
+          </div>
+          <div class="form-title">
+            <input class="form-title" type="radio" name="descripcion" value="bajada" /> He sufrido una bajada de azúcar con valor 
+              <input class="form-field"type="text" placeholder="medición" name="glucosa" id="glucosa" maxlength="5" autofocus class="campo"required>
+              <input class="form-field" type="time" placeholder="hh:mm"name="hora" id="hora" class="campo" required>
+          </div>
+          <div class="form-title">
+            <input class="form-title" type="radio" name="descripcion" value="subida" /> He sufrido una subida de azúcar
+              <input class="form-field" type="text" placeholder="medición" name="glucosa" id="glucosa" maxlength="5" autofocus class="campo"required>
+              <input class="form-field" type="time" placeholder="hh:mm"name="hora" id="hora" class="campo" required>
+          </div>
+          <p class="form-title">Adjuntar fichero</p>
+            <input class="form-title" type="file" name="fichero">
+      <div class="submit-container">
+        <input class="submit-button" type="submit" value="Submit" />
+      </div>
+    </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="wrapper">
+        <div class="fleft">Copyright - GluControl</div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>
